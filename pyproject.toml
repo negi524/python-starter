@@ -5,7 +5,6 @@ description = "Template for Python project"
 authors = ["negi524 <egtnrumpbiizarre.info@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "python_starter"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
