@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python-starter"
+version = "0.1.0"
+description = "Template for Python project"
+authors = ["negi524 <egtnrumpbiizarre.info@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "python_starter"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.28.2"
+PyYAML = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
