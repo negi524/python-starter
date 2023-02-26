@@ -10,8 +10,10 @@ poetry install
 ## プログラム実行
 
 ```bash
-poetry run python main.py
+poetry run python src/python_starter/main.py
 ```
+
+or 
 
 ```bash
 poetry run dev
@@ -22,3 +24,8 @@ poetry run dev
 ```bash
 poetry run black src/
 ```
+
+## テスト実行
+
+```bash
+poetry run pytest src/tests/

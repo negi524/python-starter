@@ -2,7 +2,7 @@ def main():
     print("hello, world.")
 
 
-def add_one(number):
+def add_one(number: int) -> int:
     return number + 1
 
 
