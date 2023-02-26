@@ -12,3 +12,13 @@ poetry install
 ```bash
 poetry run python main.py
 ```
+
+```bash
+poetry run dev
+```
+
+## フォーマット
+
+```bash
+poetry run black src/
+```
