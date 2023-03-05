@@ -1,9 +1,12 @@
 import application_setting.my_logger as mylogger
+from logging import Logger
+
+# loggerを取得
+logger: Logger = mylogger.get_logger("main")
 
 
 def main():
-    print(mylogger.get_logger())
-    print("hello, world.")
+    logger.info("hello, world.")
 
 
 def add_one(number: int) -> int:
