@@ -7,10 +7,16 @@ Pythonのプロジェクトテンプレート
 poetry install
 ```
 
+## credentialファイル作成
+
+```bash
+cp python_starter/config/credential-sample.yml python_starter/config/credential.yml
+```
+
 ## プログラム実行
 
 ```bash
-poetry run python src/python_starter/main.py
+poetry run python python_starter/main.py
 ```
 
 or 
@@ -22,10 +28,10 @@ poetry run dev
 ## フォーマット
 
 ```bash
-poetry run black src/
+poetry run black python_starter/ tests/
 ```
 
 ## テスト実行
 
 ```bash
-poetry run pytest src/tests/
+poetry run pytest tests/

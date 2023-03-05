@@ -1,4 +1,8 @@
+import application_setting.my_logger as my_logger
+
+
 def main():
+    print(my_logger.get_logger())
     print("hello, world.")
 
 
