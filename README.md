@@ -36,3 +36,9 @@ poetry run black python_starter/ tests/
 ```bash
 poetry run pytest tests/
 ```
+
+## 型チェック
+
+```bash
+poetry run mypy python_starter/
+```
