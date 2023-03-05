@@ -22,23 +22,29 @@ poetry run python python_starter/main.py
 or 
 
 ```bash
-poetry run dev
+make main
 ```
 
 ## フォーマット
 
 ```bash
-poetry run black python_starter/ tests/
+make format
 ```
 
 ## テスト実行
 
 ```bash
-poetry run pytest tests/
+make test
 ```
 
 ## 型チェック
 
 ```bash
-poetry run mypy python_starter/
+make type-check
+```
+
+## 全てまとめてチェック
+
+```bash
+make format test type-check
 ```
