@@ -12,9 +12,6 @@ packages = [
 [tool.poetry.scripts]
 dev = "python_starter.main:main"
 
-[tool.poetry.scripts]
-dev = "src.python_starter.main:main"
-
 [tool.poetry.dependencies]
 python = "^3.11"
 requests = "^2.28.2"
@@ -23,6 +20,7 @@ PyYAML = "^6.0"
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.1"
 black = "^23.1.0"
+mypy = "^1.0.1"
 
 [build-system]
 requires = ["poetry-core"]
