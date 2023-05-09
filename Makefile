@@ -1,4 +1,4 @@
-main: log/ python_starter/config/credential.yml
+main: log/ python_starter/.env
 	poetry run dev
 
 test:

@@ -1,16 +1,9 @@
-import yaml
+import os
+from dotenv import load_dotenv
 from pathlib import Path
-from typing import Optional
 
-credential_file_path: str = (
-    f"{Path(__file__).resolve().parent.parent}/config/credential.yml"
-)
+# 環境変数のファイルパス取得
+credential_file_path: str = f"{Path(__file__).resolve().parent.parent}/.env"
 
-
-def read_credential() -> Optional[dict]:
-    """credential情報を読み込み、辞書型で返却する
-    Returns:
-        dict: credential.ymlに記載された情報
-    """
-    with open(credential_file_path) as file:
-        return yaml.safe_load(file)
+load_dotenv(credential_file_path)
+KEY = os.getenv("KEY")
