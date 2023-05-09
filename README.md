@@ -10,7 +10,6 @@ poetry install
 ## credentialファイル作成
 
 ```bash
-cp python_starter/config/credential-sample.yml python_starter/config/credential.yml
 cp python_starter/.env.sample python_starter/.env
 ```
 
