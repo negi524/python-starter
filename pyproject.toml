@@ -16,6 +16,7 @@ dev = "python_starter.main:main"
 python = "^3.11"
 requests = "^2.28.2"
 PyYAML = "^6.0"
+python-dotenv = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.1"

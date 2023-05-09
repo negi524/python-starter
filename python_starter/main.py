@@ -6,13 +6,10 @@ from typing import Optional
 # loggerを取得
 logger: Logger = mylogger.get_logger("main")
 
-# credential情報を取得
-credential: Optional[dict] = mycredential.read_credential()
-
 
 def main():
     logger.info("hello, world.")
-    print(credential)
+    print(mycredential.KEY)
 
 
 def add_one(number: int) -> int:
