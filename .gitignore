@@ -138,5 +138,6 @@ resources/
 credential.yml
 
 # exclude specific directory
-log/
+log/*
+output/*
 !.gitkeep
