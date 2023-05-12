@@ -26,7 +26,8 @@ jobs:
     - name: Setup poetry
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
-        poetry export -f requirements.txt --output requirements.txt
+        make export
+        ls
         poetry --version
         #     - name: Install dependencies
         #       run: |
