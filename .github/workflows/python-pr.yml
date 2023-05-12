@@ -34,6 +34,7 @@ jobs:
         make format test type-check
     - name: Tag check
       run: |
+        git tag -n
         export TAG_VERSION=$(poetry version | awk '{print $2}')
         git tag $TAG_VERSION
         echo $?
