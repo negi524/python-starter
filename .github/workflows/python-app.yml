@@ -30,4 +30,7 @@ jobs:
         make export
     - name: Install dependencies
       run: |
+        poetry install
+    - name: Format and test
+      run: |
         make format test type-check
