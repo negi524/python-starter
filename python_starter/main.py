@@ -13,7 +13,7 @@ def main():
 
 
 def add_one(number: int) -> int:
-    return number + 2
+    return number + 1
 
 
 if __name__ == "__main__":
