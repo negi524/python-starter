@@ -1,11 +1,17 @@
 name: Generate git tag
 
-on: workflow_dispatch
-    #   pull_request:
-    #     branches:
-    #       - main
-    #     types:
-    #       - closed
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: '説明'
+        required: true
+        default: 'デフォルト値'
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
 
 jobs:
   push_tag:
