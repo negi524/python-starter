@@ -7,6 +7,9 @@ on:
     types:
       - closed
 
+permissions:
+  actions: write
+
 jobs:
   push_tag:
     if: github.event.pull_request.merged == true
