@@ -1,12 +1,6 @@
 name: Generate git tag
 
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: '説明'
-        required: true
-        default: 'デフォルト値'
   pull_request:
     branches:
       - main
