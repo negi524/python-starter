@@ -34,8 +34,10 @@ jobs:
         make format test type-check
     - name: Tag check
       run: |
+        # タグ情報のみfetch
         git fetch --tags
         git tag -n
+        # pyproject.tomlからバージョン取得
         export TAG_VERSION=$(poetry version | awk '{print $2}')
+        # 取得したバージョンでタグを生成
         git tag $TAG_VERSION
-        echo $?
