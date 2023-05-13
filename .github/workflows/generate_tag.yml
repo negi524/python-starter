@@ -1,5 +1,6 @@
 name: Generate git tag
 
+on: workflow_dispatch
 on:
   pull_request:
     branches:
