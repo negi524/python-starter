@@ -6,12 +6,6 @@ on:
       - main
     types:
       - closed
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: false
 
 permissions:
   actions: write
@@ -19,7 +13,7 @@ permissions:
 
 jobs:
   push_tag:
-    # if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
