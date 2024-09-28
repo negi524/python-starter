@@ -1,5 +1,5 @@
 main: log/ python_starter/.env
-	poetry run dev
+	poetry run python python_starter/main.py
 
 test:
 	poetry run pytest tests/
