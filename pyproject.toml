@@ -6,7 +6,7 @@ authors = ["negi524 <egtnrumpbiizarre.info@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-    { include = "application_setting", from = "python_starter" }
+    { include = "application_setting", from = "src" }
   ]
 
 [tool.poetry.dependencies]
