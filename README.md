@@ -49,8 +49,21 @@ make type-check
 make format test type-check
 ```
 
-## バージョンアップ
+## リポジトリのバージョンアップ
 
 ```bash
 poetry version <バージョン>
+```
+
+## パッケージのバージョンアップ
+
+```bash
+poetry search <パッケージ名>
+```
+
+`pyproject.toml`を確認し、必要であれば制約を修正する。
+その後
+
+```bash
+poetry update
 ```
