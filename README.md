@@ -48,3 +48,9 @@ make type-check
 ```bash
 make format test type-check
 ```
+
+## バージョンアップ
+
+```bash
+poetry version <バージョン>
+```
