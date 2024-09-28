@@ -10,13 +10,13 @@ poetry install
 ## credentialファイル作成
 
 ```bash
-cp python_starter/.env.sample python_starter/.env
+cp src/.env.sample src/.env
 ```
 
 ## プログラム実行
 
 ```bash
-poetry run python python_starter/main.py
+poetry run python src/main.py
 ```
 
 or 
@@ -48,3 +48,24 @@ make type-check
 ```bash
 make format test type-check
 ```
+
+## リポジトリのバージョンアップ
+
+```bash
+poetry version <バージョン>
+```
+
+## パッケージのバージョンアップ
+
+```bash
+poetry search <パッケージ名>
+```
+
+`pyproject.toml`を確認し、必要であれば制約を修正する。
+その後
+
+```bash
+poetry update
+```
+
+[poetry documentation](https://python-poetry.org/docs/cli/#update)

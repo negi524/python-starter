@@ -1,5 +1,6 @@
-from python_starter.main import add_one
+# from src.main import add_one
+import src.main as main
 
 
 def test_add_one():
-    assert add_one(1) == 2
+    assert main.add_one(1) == 2

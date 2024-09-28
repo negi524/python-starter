@@ -1,29 +1,26 @@
 [tool.poetry]
 name = "python-starter"
-version = "1.1.5"
+version = "1.1.6"
 description = "Template for Python project"
 authors = ["negi524 <egtnrumpbiizarre.info@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-    { include = "application_setting", from = "python_starter" }
+    { include = "application_setting", from = "src" }
   ]
 
-[tool.poetry.scripts]
-dev = "python_starter.main:main"
-
 [tool.poetry.dependencies]
-python = "^3.11"
-requests = "^2.28.2"
+python = "^3.12"
+requests = "^2.32"
 PyYAML = "^6.0"
 python-dotenv = "^1.0.0"
-types-requests = "^2.31.0.1"
+types-requests = "^2.32"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.2.1"
-black = "^23.1.0"
-mypy = "^1.0.1"
-types-pyyaml = "^6.0.12.8"
+pytest = "^8.3"
+black = "^24.8"
+mypy = "^1.11"
+types-pyyaml = "^6.0.12"
 
 [build-system]
 requires = ["poetry-core"]
@@ -31,3 +28,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
 ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+pythonpath = "src"
