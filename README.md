@@ -10,13 +10,13 @@ poetry install
 ## credentialファイル作成
 
 ```bash
-cp python_starter/.env.sample python_starter/.env
+cp src/.env.sample src/.env
 ```
 
 ## プログラム実行
 
 ```bash
-poetry run python python_starter/main.py
+poetry run python src/main.py
 ```
 
 or 
