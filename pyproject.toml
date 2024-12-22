@@ -15,6 +15,7 @@ requests = "^2.32"
 PyYAML = "^6.0"
 python-dotenv = "^1.0.0"
 types-requests = "^2.32"
+pydantic = "^2.10.4"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3"
