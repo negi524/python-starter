@@ -1,16 +1,12 @@
-from pydantic import BaseModel
 import application_setting.my_logger as mylogger
 from logging import Logger
 import application_setting.my_credential as mycredential
 from typing import Optional
 
+from user import User
+
 # loggerを取得
 logger: Logger = mylogger.get_logger("main")
-
-
-class User(BaseModel):
-    id: int
-    name: str
 
 
 def main():
