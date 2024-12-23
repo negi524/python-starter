@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-starter"
-version = "1.1.7"
+version = "1.1.8"
 description = "Template for Python project"
 authors = ["negi524 <egtnrumpbiizarre.info@gmail.com>"]
 license = "MIT"
@@ -15,6 +15,7 @@ requests = "^2.32"
 PyYAML = "^6.0"
 python-dotenv = "^1.0.0"
 types-requests = "^2.32"
+pydantic = "^2.10.4"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3"
