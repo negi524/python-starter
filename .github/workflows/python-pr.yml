@@ -28,9 +28,9 @@ jobs:
         poetry install
     - name: Format and test
       run: |
-        poetry format
-        poetry type-check
-        poetry test
+        poetry run black src/ tests/
+        poetry run mypy -p src
+        poetry run pytest tests/
     - name: Tag check
       run: |
         # タグ情報のみfetch
