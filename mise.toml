@@ -1,2 +1,30 @@
 [tools]
 python = "3.12"
+
+[tasks.main]
+description = "プログラムを実行する"
+run = "poetry run python src/main.py"
+
+[tasks.test]
+description = "テストを実行する"
+run = "poetry run pytest tests/"
+
+[tasks.format]
+description = "ファイルのフォーマットを行う"
+run = "poetry run black src/ tests/"
+
+[tasks.type-check]
+description = "プログラムの型チェックを行う"
+run = "poetry run mypy -p src"
+
+[tasks.check-all]
+description = "全てまとめてチェックを行う"
+run =[
+  "mise run format",
+  "mise run type-check",
+  "mise run test"
+]
+
+[tasks.export]
+description = "requirements.txtを出力する"
+run = "poetry export -f requirements.txt --output requirements.txt"
