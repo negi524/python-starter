@@ -23,13 +23,14 @@ jobs:
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
         poetry --version
-        make export
     - name: Install dependencies
       run: |
         poetry install
     - name: Format and test
       run: |
-        make format test type-check
+        poetry run black src/ tests/
+        poetry run mypy -p src
+        poetry run pytest tests/
     - name: Tag check
       run: |
         # タグ情報のみfetch

@@ -19,36 +19,9 @@ cp src/.env.sample src/.env
 poetry run python src/main.py
 ```
 
-or 
+## その他コマンド
 
-```bash
-make main
-```
-
-## フォーマット
-
-```bash
-make format
-```
-
-## テスト実行
-
-```bash
-make test
-```
-
-## 型チェック
-
-```bash
-make type-check
-```
-
-## 全てまとめてチェック
-
-```bash
-make format test type-check
-```
-
+[mise.toml](./mise.toml)
 ## リポジトリのバージョンアップ
 
 ```bash
