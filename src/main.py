@@ -1,7 +1,6 @@
 import application_setting.my_logger as mylogger
 from logging import Logger
 import application_setting.my_credential as mycredential
-from typing import Optional
 
 from user import User
 
@@ -11,7 +10,7 @@ logger: Logger = mylogger.get_logger("main")
 
 def main():
     logger.info("hello, world.")
-    user = User(id="1", name="Hoge")
+    user = User(id=1, name="Hoge")
     logger.info(user)
     print(mycredential.KEY)
 
