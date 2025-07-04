@@ -19,3 +19,10 @@ dev = [
     "pytest>=8.4.1",
     "types-pyyaml>=6.0.12.20250516",
 ]
+
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+pythonpath = "src"

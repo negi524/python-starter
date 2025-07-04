@@ -245,7 +245,7 @@ wheels = [
 
 [[package]]
 name = "python-starter"
-version = "1.2.3"
+version = "1.2.4"
 source = { virtual = "." }
 dependencies = [
     { name = "pydantic" },
