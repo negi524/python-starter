@@ -16,7 +16,7 @@ cp src/.env.sample src/.env
 ## プログラム実行
 
 ```bash
-poetry run python src/main.py
+uv run python src/main.py
 ```
 
 ## その他コマンド
@@ -25,20 +25,5 @@ poetry run python src/main.py
 ## リポジトリのバージョンアップ
 
 ```bash
-poetry version <バージョン>
+uv version --bump patch
 ```
-
-## パッケージのバージョンアップ
-
-```bash
-poetry search <パッケージ名>
-```
-
-`pyproject.toml`を確認し、必要であれば制約を修正する。
-その後
-
-```bash
-poetry update
-```
-
-[poetry documentation](https://python-poetry.org/docs/cli/#update)

@@ -19,24 +19,24 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.13"
-    - name: Setup poetry
+    - name: Setup uv
       run: |
-        curl -sSL https://install.python-poetry.org | python3 -
-        poetry --version
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        uv --version
     - name: Install dependencies
       run: |
-        poetry install
+        uv sync
     - name: Format and test
       run: |
-        poetry run black src/ tests/
-        poetry run mypy -p src
-        poetry run pytest tests/
+        uv run black src/ tests/
+        uv run mypy -p src
+        uv run pytest tests/
     - name: Tag check
       run: |
         # タグ情報のみfetch
         git fetch --tags
         git tag -n
         # pyproject.tomlからバージョン取得
-        export TAG_VERSION=$(poetry version | awk '{print $2}')
+        export TAG_VERSION=$(uv version | awk '{print $2}')
         # 取得したバージョンでタグを生成
         git tag $TAG_VERSION
