@@ -4,7 +4,7 @@ Pythonのプロジェクトテンプレート
 ## プロジェクトインストール
 
 ```bash
-poetry install
+uv sync
 ```
 
 ## credentialファイル作成
